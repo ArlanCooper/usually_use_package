@@ -14,3 +14,4 @@
 # 数据预处理
 - [jieba分词](./data_process/jieba_split/jieba_split.py)
 - [简繁体转换](./data_process/trandition2simple/main_process.py)
+- [所有常用的字典](./data_process/common_dicts/)
