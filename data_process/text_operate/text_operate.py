@@ -35,3 +35,12 @@ class TextOperate():
             for j in range(n):
                 dp[j+1],lu=min(dp[j]+1,dp[j+1]+1,lu+int(s1[i]!=s2[j])),dp[j+1]
         return dp[-1]
+    
+    def lower(self,words_str):
+        '''
+        将字符串小写化
+        '''
+        if isinstance(words_str,str):
+            return words_str.lower()
+        else:
+            raise ValueError('输入的类型不是字符串，请查看原因')
