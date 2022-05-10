@@ -22,5 +22,5 @@
     - [pregnant_words](./data_process/common_dicts/pregnant_words.txt)(孕妇词汇表)
     - [severe_words](./data_process/common_dicts/severe_words.txt)(重病词汇表)
 
-#时间处理
+# 时间处理
 - [timeprocess](./time_operation/util_times.py)
