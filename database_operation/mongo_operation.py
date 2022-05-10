@@ -196,4 +196,25 @@ class MyMongo():
         except Exception as e:
             logger.error('更新单条数据失败,具体原因请查看:', e)
             return False
+    def delete_one(self, table_name, dic):
+        '''
+        :param table_name: str 数据库中的集合
+        :param dic: dict 查询条件
+        :return: 返回DeleteResult对象
+        '''
+        collection = self.db[table_name]
+        rep = collection.delete_one(dic)
+
+        return rep
+
+    def delete_many(self, table_name, dic={}):
+        '''
+        :param table_name: str 数据库中的集合
+        :param dic: dict 查询条件
+        :return: 返回DeleteResult对象
+        '''
+        collection = self.db[table_name]
+        rep = collection.delete_many(dic)
+
+        return rep
 
